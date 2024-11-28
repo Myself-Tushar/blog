@@ -36,7 +36,9 @@ function Header() {
   return (
     <header className="custom-header">
       <div className="custom-header-container">
-        <h1 className="custom-heading"><strong>Tech TSR</strong></h1>
+      <a href="https://youtube.com/@tech-tsr?si=kHqX5hK8K1Iqawv6" className="no-style-link">
+  <h1 className="custom-heading"><strong>Tech TSR</strong></h1>
+</a>
 
         {/* Navbar Toggle for Mobile */}
         <button

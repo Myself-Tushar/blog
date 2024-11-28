@@ -58,9 +58,13 @@ html {
 /* Hover effect for the heading */
 .custom-heading:hover {
   color: #1c7fef; /* Change color on hover */
-  
 }
 
+/* Remove default link styles */
+.no-style-link {
+  text-decoration: none; /* Remove underline from the link */
+  color: inherit; /* Ensure the text color is inherited */
+}
 
 .hover-link:hover {
   color: #4A90E2;
