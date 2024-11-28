@@ -1,0 +1,62 @@
+/* Header Styling */
+.custom-header {
+    background-color: #0e3294; /* Dark blue */
+    color: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 0 !important; /* Remove extra padding */
+  }
+  
+  /* Header Container */
+  .custom-header-container {
+    height: 80px !important; /* Reduced height */
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 1rem !important; /* Smaller horizontal padding */
+    box-sizing: border-box !important;
+  }
+  
+  /* Navbar Links */
+  .nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.875rem; /* Smaller font */
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #cbd5e1; /* Light blue-gray */
+  }
+  
+  /* Get Started Button */
+  .get-started-btn {
+    background-color: #10b981; /* Green */
+    color: #ffffff;
+    padding: 0.25rem 1rem; /* Smaller padding */
+    border-radius: 0.25rem;
+    font-size: 0.75rem; /* Small font size */
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .get-started-btn:hover {
+    background-color: #059669; /* Darker green */
+  }
+  
+  /* Mobile Nav Links */
+  .nav-link-mobile {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link-mobile:hover {
+    color: #cbd5e1;
+  }

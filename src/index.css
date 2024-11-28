@@ -1,0 +1,457 @@
+/* Ensure TailwindCSS and Bootstrap are imported */
+@import "https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css";
+@import "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css";
+
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+.footer-copyright {
+  
+  padding-top: 3px;
+  
+  
+}
+
+.footer-copyright p {
+  margin: 0; /* Remove default paragraph margin */
+}
+
+
+/* Custom hover effect for navigation links */
+.nav-link {
+  transition: color 0.3s ease, transform 0.3s ease !important;
+}
+
+.nav-link:hover {
+  color: #255fff !important; /* Change text color to blue on hover */
+  transform: scale(1.05) !important; /* Slightly enlarge the text on hover */
+}
+
+.footer-link {
+  text-decoration: none; /* Removes underline */
+  color: inherit; /* Optional: Matches the text color of the parent */
+  
+}
+
+
+.footer-social {
+  padding-top: 4px;
+}
+
+.footer-link:hover {
+  color: #007bff; /* Optional: Adds hover effect (change color) */
+  text-decoration: underline; /* Optional: Add underline on hover if desired */
+}
+
+/* Custom CSS for the h1 element */
+.custom-heading {
+  font-size: 1.5rem; /* Equivalent to text-2xl */
+  font-weight: 500; /* Equivalent to font-bold */
+  transition: color 0.3s ease; /* Smooth color transition on hover */
+  padding-top: 10px;
+  cursor: pointer;
+}
+
+/* Hover effect for the heading */
+.custom-heading:hover {
+  color: #1c7fef; /* Change color on hover */
+  
+}
+
+
+.hover-link:hover {
+  color: #4A90E2;
+    
+}
+
+
+/* Custom hover effect for navigation links (Desktop and Mobile) */
+.nav-link, .nav-link-mobile {
+  transition: color 0.3s ease, transform 0.3s ease;
+  text-decoration: none; /* Remove underline */
+  color: white; /* Default text color is white */
+}
+
+.nav-link:hover, .nav-link-mobile:hover {
+  color: #1D4ED8; /* Change text color to blue on hover */
+  transform: scale(1.05); /* Slightly enlarge the text on hover */
+}
+
+/* Optional: Mobile menu hover effect for better UX */
+.nav-link-mobile:hover {
+  color: #225dfe !important; /* Change text color to blue on hover */
+  transform: scale(1.05) !important; /* Slightly enlarge the text on hover */
+}
+
+.sidebar img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 0.375rem;
+      }
+      
+      /* Hover effects for links */
+      .hover-link:hover, .footer-link:hover {
+        color: #4A90E2;
+        transition: color 0.3s;
+      }
+      
+      /* Gallery item image base styling */
+      .gallery-item img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      
+      /* Scale and shadow on hover */
+      .gallery-item:hover img {
+        transform: scale(1.2);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+      }
+      
+      /* General Footer Styles */
+      .custom-footer {
+        background-color: #1933a3;
+        color: #ffffff;
+        padding: 20px;
+        margin: 0;
+        width: 100vw;
+        box-sizing: border-box;
+      }
+      
+      .footer-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+      
+      /* Footer grid layout */
+      .footer-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+      
+      /* Footer section styling */
+      .footer-section {
+        margin-bottom: 20px;
+      }
+      
+      .footer-title {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      .footer-text {
+        color: #cbd5e1;
+        line-height: 1.6;
+      }
+      
+      /* Newsletter form styling */
+      .newsletter-form {
+        display: flex;
+        gap: 10px;
+        margin-top: 10px;
+      }
+      
+      .newsletter-input {
+        padding: 10px;
+        width: 70%;
+        border: 1px solid #e5e7eb;
+        border-radius: 5px;
+        background-color: #fff;
+        color: #333;
+      }
+      
+      .newsletter-btn {
+        padding: 10px 20px;
+        background-color: #3b82f6;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+      
+      .newsletter-btn:hover {
+        background-color: #2563eb;
+      }
+      
+      /* Footer Bottom Section */
+      .footer-bottom {
+        border-top: 2px solid #4b5563;
+        padding-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+      }
+      
+      /* Social media links styling */
+      .footer-social {
+        display: flex;
+        gap: 20px;
+      }
+      
+      .social-link {
+        color: #cbd5e1;
+        text-decoration: none;
+      }
+      
+      .social-link:hover {
+        color: #3b82f6;
+      }
+      
+      /* Copyright text styling */
+      .footer-copyright {
+        color: #cbd5e1;
+        font-size: 0.875rem;
+        text-align: right;
+      }
+    
+      /* Gallery Section */
+    .gallery-item {
+    display: block;
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    }
+    
+    .gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+    }
+    
+    .gallery-item:hover img {
+    transform: scale(1.1);
+    }
+    
+    .gallery-item:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    
+    .gallery-section {
+    padding: 3rem;
+    }
+    
+    .gallery-section h3 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+    }
+    
+    .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    }
+    
+    @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    }
+    
+    @media (max-width: 480px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+    }
+/* Navbar Customization */
+.navbar-custom .nav-link {
+  color: white; /* Default link color */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.navbar-custom .nav-link:hover {
+  color: #1775df;
+  text-decoration: underline;
+  background-color: rgba(23, 117, 223, 0.1); /* Light background */
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+}
+
+.navbar-custom .nav-link.active {
+  color: #0a2749;
+  font-weight: bold;
+  border-bottom: 2px solid #1775df;
+}
+
+/* Sidebar Image Styling */
+.sidebar img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0.375rem;
+  object-fit: cover;
+}
+
+/* Footer Customization */
+.custom-footer {
+  background-color: #1933a3;
+  color: #ffffff;
+  padding: 20px;
+  margin: 0;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
+}
+
+.footer-section {
+  margin-bottom: 20px;
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-text {
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+.newsletter-form {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.newsletter-input {
+  padding: 10px;
+  width: 70%;
+  border: 1px solid #e5e7eb;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #333;
+}
+
+.newsletter-btn {
+  padding: 10px 20px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.newsletter-btn:hover {
+  background-color: #2563eb;
+}
+
+.footer-bottom {
+  border-top: 2px solid #4b5563;
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-social {
+  display: flex;
+  gap: 20px;
+}
+
+.social-link {
+  color: #cbd5e1;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.social-link:hover {
+  color: #3b82f6;
+}
+
+.footer-copyright {
+  color: #cbd5e1;
+  font-size: 0.875rem;
+  text-align: right;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 3rem;
+}
+
+.gallery-section h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.gallery-item {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover {
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Link Hover Effects */
+.hover-link:hover, .footer-link:hover {
+  color: #4A90E2;
+  transition: color 0.3s;
+}
+
+
+.notification {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #1880f8; /* Green for success */
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 0.9em;
+}
+
+
