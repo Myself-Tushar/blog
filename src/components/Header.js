@@ -18,19 +18,23 @@ function Header() {
   
     const targetElement = document.getElementById(targetId);
   
+    // Ensure the target element exists
+    if (!targetElement) {
+      console.error(`Element with id "${targetId}" not found.`);
+      return;
+    }
+  
     // Get the height of the header
-    const headerHeight = document.querySelector(".custom-header").offsetHeight;
+    const headerHeight = document.querySelector(".custom-header")?.offsetHeight || 0;
   
     // Add 2px to the header height for extra space below the header
     const offsetPosition = targetElement.offsetTop - headerHeight - 2;
   
-    // If the target element exists, scroll to it
-    if (targetElement) {
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: "smooth", // Smooth scrolling
-      });
-    }
+    // Smooth scroll to the target element
+    window.scrollTo({
+      top: offsetPosition,
+      behavior: "smooth", // Smooth scrolling
+    });
   };
 
   return (
